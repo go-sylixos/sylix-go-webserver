@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang xml:lang>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="Yank Note" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    <title>工业算网平台隐私政策 V 2.0</title>
+    <style>
+          article.markdown-body { max-width: 1024px; margin: 20px auto; }html { line-height: 1.15; text-size-adjust: 100%; }
+body { margin: 0px; }
+main { display: block; }
+h1 { font-size: 2em; margin: 0.67em 0px; }
+hr { box-sizing: content-box; height: 0px; overflow: visible; }
+pre { font-family: monospace, monospace; font-size: 1em; }
+a { background-color: transparent; }
+abbr[title] { border-bottom: none; text-decoration: underline dotted; }
+b, strong { font-weight: bolder; }
+code, kbd, samp { font-family: monospace, monospace; font-size: 1em; }
+small { font-size: 80%; }
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sub { bottom: -0.25em; }
+sup { top: -0.5em; }
+img { border-style: none; }
+button, input, optgroup, select, textarea { font-family: inherit; font-size: 100%; line-height: 1.15; margin: 0px; }
+button, input { overflow: visible; }
+button, select { text-transform: none; }
+button, [type="button"], [type="reset"], [type="submit"] { appearance: button; }
+fieldset { padding: 0.35em 0.75em 0.625em; }
+legend { box-sizing: border-box; color: inherit; display: table; max-width: 100%; padding: 0px; white-space: normal; }
+progress { vertical-align: baseline; }
+textarea { overflow: auto; }
+[type="checkbox"], [type="radio"] { box-sizing: border-box; padding: 0px; }
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button { height: auto; }
+[type="search"] { appearance: textfield; outline-offset: -2px; }
+[type="search"]::-webkit-search-decoration { appearance: none; }
+::-webkit-file-upload-button { appearance: button; font: inherit; }
+details { display: block; }
+summary { display: list-item; }
+template { display: none; }
+[hidden] { display: none; }
+html[app-theme="light"]:root, :root { --g-background-color: #fff; --g-background-color-rgb: 255, 255, 255; --g-foreground-color: #24292f; --g-foreground-color-rgb: 36, 41, 47; --g-color-0: #24292f; --g-color-0-rgb: 36, 41, 47; --g-color-1: #262b31; --g-color-1-rgb: 38, 43, 49; --g-color-2: #282d33; --g-color-2-rgb: 40, 45, 51; --g-color-3: #2b2f35; --g-color-3-rgb: 43, 47, 53; --g-color-4: #2d3237; --g-color-4-rgb: 45, 50, 55; --g-color-5: #2f3439; --g-color-5-rgb: 47, 52, 57; --g-color-6: #31363b; --g-color-6-rgb: 49, 54, 59; --g-color-7: #33383e; --g-color-7-rgb: 51, 56, 62; --g-color-8: #363a40; --g-color-8-rgb: 54, 58, 64; --g-color-9: #383c42; --g-color-9-rgb: 56, 60, 66; --g-color-10: #3a3e44; --g-color-10-rgb: 58, 62, 68; --g-color-11: #3c4146; --g-color-11-rgb: 60, 65, 70; --g-color-12: #3e4348; --g-color-12-rgb: 62, 67, 72; --g-color-13: #40454a; --g-color-13-rgb: 64, 69, 74; --g-color-14: #43474c; --g-color-14-rgb: 67, 71, 76; --g-color-15: #45494e; --g-color-15-rgb: 69, 73, 78; --g-color-16: #474b50; --g-color-16-rgb: 71, 75, 80; --g-color-17: #494d52; --g-color-17-rgb: 73, 77, 82; --g-color-18: #4b5054; --g-color-18-rgb: 75, 80, 84; --g-color-19: #4e5257; --g-color-19-rgb: 78, 82, 87; --g-color-20: #505459; --g-color-20-rgb: 80, 84, 89; --g-color-21: #52565b; --g-color-21-rgb: 82, 86, 91; --g-color-22: #54585d; --g-color-22-rgb: 84, 88, 93; --g-color-23: #565a5f; --g-color-23-rgb: 86, 90, 95; --g-color-24: #595c61; --g-color-24-rgb: 89, 92, 97; --g-color-25: #5b5f63; --g-color-25-rgb: 91, 95, 99; --g-color-26: #5d6165; --g-color-26-rgb: 93, 97, 101; --g-color-27: #5f6367; --g-color-27-rgb: 95, 99, 103; --g-color-28: #616569; --g-color-28-rgb: 97, 101, 105; --g-color-29: #64676b; --g-color-29-rgb: 100, 103, 107; --g-color-30: #66696d; --g-color-30-rgb: 102, 105, 109; --g-color-31: #686b6f; --g-color-31-rgb: 104, 107, 111; --g-color-32: #6a6d72; --g-color-32-rgb: 106, 109, 114; --g-color-33: #6c7074; --g-color-33-rgb: 108, 112, 116; --g-color-34: #6e7276; --g-color-34-rgb: 110, 114, 118; --g-color-35: #717478; --g-color-35-rgb: 113, 116, 120; --g-color-36: #73767a; --g-color-36-rgb: 115, 118, 122; --g-color-37: #75787c; --g-color-37-rgb: 117, 120, 124; --g-color-38: #777a7e; --g-color-38-rgb: 119, 122, 126; --g-color-39: #797c80; --g-color-39-rgb: 121, 124, 128; --g-color-40: #7c7f82; --g-color-40-rgb: 124, 127, 130; --g-color-41: #7e8184; --g-color-41-rgb: 126, 129, 132; --g-color-42: #808386; --g-color-42-rgb: 128, 131, 134; --g-color-43: #828588; --g-color-43-rgb: 130, 133, 136; --g-color-44: #84878b; --g-color-44-rgb: 132, 135, 139; --g-color-45: #87898d; --g-color-45-rgb: 135, 137, 141; --g-color-46: #898b8f; --g-color-46-rgb: 137, 139, 143; --g-color-47: #8b8e91; --g-color-47-rgb: 139, 142, 145; --g-color-48: #8d9093; --g-color-48-rgb: 141, 144, 147; --g-color-49: #8f9295; --g-color-49-rgb: 143, 146, 149; --g-color-50: #929497; --g-color-50-rgb: 146, 148, 151; --g-color-51: #949699; --g-color-51-rgb: 148, 150, 153; --g-color-52: #96989b; --g-color-52-rgb: 150, 152, 155; --g-color-53: #989a9d; --g-color-53-rgb: 152, 154, 157; --g-color-54: #9a9d9f; --g-color-54-rgb: 154, 157, 159; --g-color-55: #9c9fa1; --g-color-55-rgb: 156, 159, 161; --g-color-56: #9fa1a3; --g-color-56-rgb: 159, 161, 163; --g-color-57: #a1a3a6; --g-color-57-rgb: 161, 163, 166; --g-color-58: #a3a5a8; --g-color-58-rgb: 163, 165, 168; --g-color-59: #a5a7aa; --g-color-59-rgb: 165, 167, 170; --g-color-60: #a7a9ac; --g-color-60-rgb: 167, 169, 172; --g-color-61: #aaacae; --g-color-61-rgb: 170, 172, 174; --g-color-62: #acaeb0; --g-color-62-rgb: 172, 174, 176; --g-color-63: #aeb0b2; --g-color-63-rgb: 174, 176, 178; --g-color-64: #b0b2b4; --g-color-64-rgb: 176, 178, 180; --g-color-65: #b2b4b6; --g-color-65-rgb: 178, 180, 182; --g-color-66: #b5b6b8; --g-color-66-rgb: 181, 182, 184; --g-color-67: #b7b8ba; --g-color-67-rgb: 183, 184, 186; --g-color-68: #b9bbbc; --g-color-68-rgb: 185, 187, 188; --g-color-69: #bbbdbf; --g-color-69-rgb: 187, 189, 191; --g-color-70: #bdbfc1; --g-color-70-rgb: 189, 191, 193; --g-color-71: #bfc1c3; --g-color-71-rgb: 191, 193, 195; --g-color-72: #c2c3c5; --g-color-72-rgb: 194, 195, 197; --g-color-73: #c4c5c7; --g-color-73-rgb: 196, 197, 199; --g-color-74: #c6c7c9; --g-color-74-rgb: 198, 199, 201; --g-color-75: #c8cacb; --g-color-75-rgb: 200, 202, 203; --g-color-76: #cacccd; --g-color-76-rgb: 202, 204, 205; --g-color-77: #cdcecf; --g-color-77-rgb: 205, 206, 207; --g-color-78: #cfd0d1; --g-color-78-rgb: 207, 208, 209; --g-color-79: #d1d2d3; --g-color-79-rgb: 209, 210, 211; --g-color-80: #d3d4d5; --g-color-80-rgb: 211, 212, 213; --g-color-81: #d5d6d7; --g-color-81-rgb: 213, 214, 215; --g-color-82: #d8d8da; --g-color-82-rgb: 216, 216, 218; --g-color-83: #dadbdc; --g-color-83-rgb: 218, 219, 220; --g-color-84: #dcddde; --g-color-84-rgb: 220, 221, 222; --g-color-85: #dedfe0; --g-color-85-rgb: 222, 223, 224; --g-color-86: #e0e1e2; --g-color-86-rgb: 224, 225, 226; --g-color-87: #e3e3e4; --g-color-87-rgb: 227, 227, 228; --g-color-88: #e5e5e6; --g-color-88-rgb: 229, 229, 230; --g-color-89: #e7e7e8; --g-color-89-rgb: 231, 231, 232; --g-color-90: #e9eaea; --g-color-90-rgb: 233, 234, 234; --g-color-91: #ebecec; --g-color-91-rgb: 235, 236, 236; --g-color-92: #edeeee; --g-color-92-rgb: 237, 238, 238; --g-color-93: #f0f0f0; --g-color-93-rgb: 240, 240, 240; --g-color-94: #f2f2f3; --g-color-94-rgb: 242, 242, 243; --g-color-95: #f4f4f5; --g-color-95-rgb: 244, 244, 245; --g-color-96: #f6f6f7; --g-color-96-rgb: 246, 246, 247; --g-color-97: #f8f9f9; --g-color-97-rgb: 248, 249, 249; --g-color-98: #fbfbfb; --g-color-98-rgb: 251, 251, 251; --g-color-99: #fdfdfd; --g-color-99-rgb: 253, 253, 253; --g-color-100: white; --g-color-100-rgb: 255, 255, 255; --selection-color: rgba(86, 155, 214, 0.38); --scrollbar-shadow-color: rgba(36, 41, 47, 0.1); --scrollbar-track-background-color: rgba(36, 41, 47, 0.08); --scrollbar-thumb-background-color: rgba(36, 41, 47, 0.1); --scrollbar-thumb-hover-background-color: rgba(36, 41, 47, 0.3); --g-border-radius: 4px; --g-backdrop-filter: blur(18px); --g-color-backdrop: rgba(var(--g-color-100-rgb), 0.65); --g-color-active-a: rgba(var(--g-color-0-rgb), 0.1); --g-color-active-b: rgba(var(--g-color-0-rgb), 0.15); --g-color-active-c: rgba(var(--g-color-0-rgb), 0.2); --g-color-active-d: rgba(var(--g-color-0-rgb), 0.25); }
+html { outline: none; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; accent-color: rgb(20, 112, 251); }
+html[platform^="Win"] { font-family: arial, system-ui, "Segoe UI", Helvetica, sans-serif; }
+a { color: rgb(76, 147, 226); }
+::selection { background: var(--selection-color); }
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { border-radius: var(--g-border-radius); background: var(--scrollbar-track-background-color); box-shadow: inset 0 0 5px var(--scrollbar-shadow-color); }
+::-webkit-scrollbar-thumb { border-radius: var(--g-border-radius); background: var(--scrollbar-thumb-background-color); box-shadow: inset 0 0 6px var(--scrollbar-shadow-color); }
+::-webkit-scrollbar-thumb:hover { background: var(--scrollbar-thumb-hover-background-color); }
+.avoid-page-break { break-inside: avoid; }
+.new-page { break-before: page; }
+.bgw { background-color: rgb(255, 255, 255) !important; }
+.inline { display: inline !important; }
+.block { display: block !important; }
+[display-none] { display: none !important; }
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.with-border { border: 1px solid var(--g-color-80); border-radius: var(--g-border-radius); }
+.markdown-body { text-size-adjust: 100%; color: rgb(36, 41, 46); font-family: -apple-system, MacEmoji, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"; font-size: 16px; line-height: 1.5; overflow-wrap: break-word; }
+.markdown-body details { display: block; }
+.markdown-body summary { display: list-item; }
+.markdown-body a { background-color: initial; }
+.markdown-body a:active, .markdown-body a:hover { outline-width: 0px; }
+.markdown-body strong { font-weight: bolder; }
+.markdown-body h1 { font-size: 2em; margin: 0.67em 0px; }
+.markdown-body img { border-style: none; }
+.markdown-body code, .markdown-body kbd, .markdown-body pre { font-family: monospace, monospace; font-size: 1em; }
+.markdown-body hr { box-sizing: initial; height: 0px; overflow: visible; }
+.markdown-body input { font: inherit; margin: 0px; }
+.markdown-body input { overflow: visible; }
+.markdown-body [type="checkbox"] { box-sizing: border-box; padding: 0px; }
+.markdown-body * { box-sizing: border-box; }
+.markdown-body input { font-family: inherit; font-size: inherit; line-height: inherit; }
+.markdown-body a { color: rgb(3, 102, 214); text-decoration: none; }
+.markdown-body a:hover { text-decoration: underline; }
+.markdown-body strong { font-weight: 600; }
+.markdown-body hr { height: 0px; margin: 15px 0px; overflow: hidden; background: transparent; border-width: 0px 0px 1px; border-top-style: initial; border-right-style: initial; border-left-style: initial; border-top-color: initial; border-right-color: initial; border-left-color: initial; border-image: initial; border-bottom-style: solid; border-bottom-color: rgb(223, 226, 229); }
+.markdown-body hr::after, .markdown-body hr::before { display: table; content: ""; }
+.markdown-body hr::after { clear: both; }
+.markdown-body table { border-spacing: 0px; border-collapse: collapse; }
+.markdown-body td, .markdown-body th { padding: 0px; }
+.markdown-body details summary { cursor: pointer; }
+.markdown-body kbd { display: inline-block; padding: 3px 5px; font: 11px / 10px SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; color: rgb(68, 77, 86); vertical-align: middle; background-color: rgb(250, 251, 252); border: 1px solid rgb(209, 213, 218); border-radius: 3px; box-shadow: rgb(209, 213, 218) 0px -1px 0px inset; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 { margin-top: 0px; margin-bottom: 0px; }
+.markdown-body h1 { font-size: 32px; }
+.markdown-body h1, .markdown-body h2 { font-weight: 600; }
+.markdown-body h2 { font-size: 24px; }
+.markdown-body h3 { font-size: 20px; }
+.markdown-body h3, .markdown-body h4 { font-weight: 600; }
+.markdown-body h4 { font-size: 16px; }
+.markdown-body h5 { font-size: 14px; }
+.markdown-body h5, .markdown-body h6 { font-weight: 600; }
+.markdown-body h6 { font-size: 12px; }
+.markdown-body p { margin-top: 0px; margin-bottom: 10px; }
+.markdown-body blockquote { margin: 0px; }
+.markdown-body ol, .markdown-body ul { padding-left: 0px; margin-top: 0px; margin-bottom: 0px; }
+.markdown-body ol ol, .markdown-body ul ol { list-style-type: lower-roman; }
+.markdown-body ol ol ol, .markdown-body ol ul ol, .markdown-body ul ol ol, .markdown-body ul ul ol { list-style-type: lower-alpha; }
+.markdown-body dd { margin-left: 0px; }
+.markdown-body code, .markdown-body pre { font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace; font-size: 12px; }
+.markdown-body pre { margin-top: 0px; margin-bottom: 0px; }
+.markdown-body input::-webkit-inner-spin-button, .markdown-body input::-webkit-outer-spin-button { margin: 0px; appearance: none; }
+.markdown-body hr { border-bottom-color: rgb(238, 238, 238); }
+.markdown-body::after, .markdown-body::before { display: table; content: ""; }
+.markdown-body::after { clear: both; }
+.markdown-body > :first-child { margin-top: 0px !important; }
+.markdown-body > :last-child { margin-bottom: 0px !important; }
+.markdown-body a:not([href]) { color: inherit; text-decoration: none; }
+.markdown-body blockquote, .markdown-body details, .markdown-body dl, .markdown-body ol, .markdown-body p, .markdown-body pre, .markdown-body table, .markdown-body ul { margin-top: 0px; margin-bottom: 16px; }
+.markdown-body hr { height: 0.25em; padding: 0px; margin: 24px 0px; background-color: rgb(225, 228, 232); border: 0px; }
+.markdown-body blockquote { padding: 0px 1em; color: rgb(106, 115, 125); border-left: 0.25em solid rgb(223, 226, 229); }
+.markdown-body blockquote > :first-child { margin-top: 0px; }
+.markdown-body blockquote > :last-child { margin-bottom: 0px; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4, .markdown-body h5, .markdown-body h6 { margin-top: 24px; margin-bottom: 16px; font-weight: 600; line-height: 1.25; }
+.markdown-body h1 { font-size: 2em; }
+.markdown-body h1, .markdown-body h2 { padding-bottom: 0.3em; border-bottom: 1px solid rgb(234, 236, 239); }
+.markdown-body h2 { font-size: 1.5em; }
+.markdown-body h3 { font-size: 1.25em; }
+.markdown-body h4 { font-size: 1em; }
+.markdown-body h5 { font-size: 0.875em; }
+.markdown-body h6 { font-size: 0.85em; color: rgb(106, 115, 125); }
+.markdown-body ol, .markdown-body ul { padding-left: 2em; }
+.markdown-body ol ol, .markdown-body ol ul, .markdown-body ul ol, .markdown-body ul ul { margin-top: 0px; margin-bottom: 0px; }
+.markdown-body li { }
+.markdown-body li > p { margin-top: 16px; }
+.markdown-body li + li { margin-top: 0.25em; }
+.markdown-body dl { padding: 0px; }
+.markdown-body dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: 600; }
+.markdown-body dl dd { padding: 0px 16px; margin-bottom: 16px; }
+.markdown-body table { display: block; width: 100%; overflow: auto; }
+.markdown-body table th { font-weight: 600; }
+.markdown-body table td, .markdown-body table th { padding: 6px 13px; border: 1px solid rgb(223, 226, 229); }
+.markdown-body table tr { background-color: rgb(255, 255, 255); border-top: 1px solid rgb(198, 203, 209); }
+.markdown-body table tr:nth-child(2n) { background-color: rgb(246, 248, 250); }
+.markdown-body img { max-width: 100%; box-sizing: initial; }
+.markdown-body img[align="right"] { padding-left: 20px; }
+.markdown-body img[align="left"] { padding-right: 20px; }
+.markdown-body code { padding: 0.2em 0.4em; margin: 0px; font-size: 85%; background-color: rgba(27, 31, 35, 0.05); border-radius: 3px; }
+.markdown-body pre { overflow-wrap: normal; }
+.markdown-body pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; background: transparent; border: 0px; }
+.markdown-body .highlight { margin-bottom: 16px; }
+.markdown-body .highlight pre { margin-bottom: 0px; word-break: normal; }
+.markdown-body .highlight pre, .markdown-body pre { padding: 16px; overflow: auto; font-size: 85%; line-height: 1.45; background-color: rgb(246, 248, 250); border-radius: 3px; }
+.markdown-body pre code { display: inline; padding: 0px; margin: 0px; overflow: visible; line-height: inherit; overflow-wrap: normal; background-color: initial; border: 0px; }
+.markdown-body .task-list-item { list-style-type: none; }
+.markdown-body .task-list-item + .task-list-item { margin-top: 3px; }
+.markdown-body .task-list-item input { margin: 0px 0.2em 0.25em -1.6em; vertical-align: middle; }
+.markdown-view.presentation .markdown-body[data-v-26692da4] { margin-top: 0px; }
+.markdown-body { position: relative; }
+.markdown-body mark { background: rgb(255, 248, 197) !important; }
+.markdown-body fieldset { border-style: solid; border-width: 1px; border-radius: var(--g-border-radius); margin: 20px 0px; }
+.markdown-body fieldset legend { padding: 0px 0.2em; }
+.markdown-body table { display: table; }
+.markdown-body hr { border-bottom: 1px solid; }
+.markdown-body p > img[only-child] { display: block; margin-left: auto; margin-right: auto; }
+.markdown-body img.inline, .markdown-body img[src*=".inline"], .markdown-body img[origin-src*=".inline"] { display: inline !important; }
+.markdown-body img.bgw, .markdown-body img[src*=".bgw"], .markdown-body img[origin-src*=".bgw"] { background-color: rgb(255, 255, 255) !important; }
+.markdown-body a:not([href^="#fn"])[href^="#"]::after { width: 11px; content: url("data:image/svg+xml,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22far%22%20data-icon%3D%22anchor%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20576%20512%22%20class%3D%22svg-inline--fa%20fa-anchor%20fa-w-18%22%3E%3Cpath%20fill%3D%22%23999999%22%20d%3D%22M571.515%20331.515l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971%200l-67.029%2067.029c-7.56%207.56-2.206%2020.485%208.485%2020.485h44.268C453.531%20417.326%20380.693%20456.315%20312%20462.865V216h60c6.627%200%2012-5.373%2012-12v-24c0-6.627-5.373-12-12-12h-60v-11.668c32.456-10.195%2056-40.512%2056-76.332%200-44.183-35.817-80-80-80s-80%2035.817-80%2080c0%2035.82%2023.544%2066.138%2056%2076.332V168h-60c-6.627%200-12%205.373-12%2012v24c0%206.627%205.373%2012%2012%2012h60v246.865C195.192%20456.304%20122.424%20417.176%20102.762%20352h44.268c10.691%200%2016.045-12.926%208.485-20.485l-67.029-67.029c-4.686-4.686-12.284-4.686-16.971%200l-67.03%2067.029C-3.074%20339.074%202.28%20352%2012.971%20352h40.284C73.657%20451.556%20181.238%20512%20288%20512c113.135%200%20215.338-65.3%20234.745-160h40.284c10.691%200%2016.045-12.926%208.486-20.485zM288%2048c17.645%200%2032%2014.355%2032%2032s-14.355%2032-32%2032-32-14.355-32-32%2014.355-32%2032-32z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"); box-sizing: content-box; padding-left: 1px; padding-right: 1px; display: inline-block; vertical-align: baseline; }
+.markdown-body a[href$=".md"]::after, .markdown-body a[href*=".md#"]::after { width: 9px; content: url("data:image/svg+xml,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22far%22%20data-icon%3D%22file-alt%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20384%20512%22%20class%3D%22svg-inline--fa%20fa-file-alt%20fa-w-12%22%3E%3Cpath%20fill%3D%22%23999999%22%20d%3D%22M288%20248v28c0%206.6-5.4%2012-12%2012H108c-6.6%200-12-5.4-12-12v-28c0-6.6%205.4-12%2012-12h168c6.6%200%2012%205.4%2012%2012zm-12%2072H108c-6.6%200-12%205.4-12%2012v28c0%206.6%205.4%2012%2012%2012h168c6.6%200%2012-5.4%2012-12v-28c0-6.6-5.4-12-12-12zm108-188.1V464c0%2026.5-21.5%2048-48%2048H48c-26.5%200-48-21.5-48-48V48C0%2021.5%2021.5%200%2048%200h204.1C264.8%200%20277%205.1%20286%2014.1L369.9%2098c9%208.9%2014.1%2021.2%2014.1%2033.9zm-128-80V128h76.1L256%2051.9zM336%20464V176H232c-13.3%200-24-10.7-24-24V48H48v416h288z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"); box-sizing: content-box; padding-left: 2px; padding-right: 2px; display: inline-block; vertical-align: baseline; }
+.markdown-body a[href^="//"]::after, .markdown-body a[href^="http://"]::after, .markdown-body a[href^="https://"]::after { width: 10px; content: url("data:image/svg+xml,%3Csvg%20aria-hidden%3D%22true%22%20focusable%3D%22false%22%20data-prefix%3D%22far%22%20data-icon%3D%22external-link%22%20role%3D%22img%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20512%20512%22%20class%3D%22svg-inline--fa%20fa-external-link%20fa-w-16%22%3E%3Cpath%20fill%3D%22%23999999%22%20d%3D%22M497.6%2C0%2C334.4.17A14.4%2C14.4%2C0%2C0%2C0%2C320%2C14.57V47.88a14.4%2C14.4%2C0%2C0%2C0%2C14.69%2C14.4l73.63-2.72%2C2.06%2C2.06L131.52%2C340.49a12%2C12%2C0%2C0%2C0%2C0%2C17l23%2C23a12%2C12%2C0%2C0%2C0%2C17%2C0L450.38%2C101.62l2.06%2C2.06-2.72%2C73.63A14.4%2C14.4%2C0%2C0%2C0%2C464.12%2C192h33.31a14.4%2C14.4%2C0%2C0%2C0%2C14.4-14.4L512%2C14.4A14.4%2C14.4%2C0%2C0%2C0%2C497.6%2C0ZM432%2C288H416a16%2C16%2C0%2C0%2C0-16%2C16V458a6%2C6%2C0%2C0%2C1-6%2C6H54a6%2C6%2C0%2C0%2C1-6-6V118a6%2C6%2C0%2C0%2C1%2C6-6H208a16%2C16%2C0%2C0%2C0%2C16-16V80a16%2C16%2C0%2C0%2C0-16-16H48A48%2C48%2C0%2C0%2C0%2C0%2C112V464a48%2C48%2C0%2C0%2C0%2C48%2C48H400a48%2C48%2C0%2C0%2C0%2C48-48V304A16%2C16%2C0%2C0%2C0%2C432%2C288Z%22%20class%3D%22%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"); box-sizing: content-box; padding-left: 2px; padding-right: 2px; display: inline-block; vertical-align: baseline; }
+.markdown-body table a::after { display: none !important; }
+.markdown-body .table-of-contents ol { counter-reset: ol-number 0; list-style-type: none; padding-left: 0px; }
+.markdown-body .table-of-contents li > ol { padding-left: 2em; }
+.markdown-body .table-of-contents ol > li::before { counter-increment: ol-number 1; content: counters(ol-number, ".") " "; }
+.markdown-body .table-of-contents > ol > li::before { counter-increment: ol-number 1; content: counter(ol-number) ". "; }
+.markdown-body .wrap-code, .markdown-body .wrap-code ~ .p-mcr-run-code-result { white-space: pre-wrap; overflow-wrap: anywhere; }
+.markdown-body table.hljs-ln { margin: 0px; border-collapse: separate; }
+.markdown-body table.hljs-ln, .markdown-body table.hljs-ln tr, .markdown-body table.hljs-ln td { border: 0px; }
+.markdown-body table.hljs-ln td { padding: 0px; }
+.markdown-body table.hljs-ln tbody { display: table; min-width: 100%; }
+.markdown-body table.hljs-ln td.hljs-ln-numbers { user-select: none; vertical-align: top; text-align: right; min-width: 2em; width: 2em; position: sticky; left: 0px; background-color: var(--g-color-96); box-shadow: -20px 0px 0px var(--g-color-96); border-right: 1px solid var(--g-color-86); }
+.markdown-body table.hljs-ln td.hljs-ln-code { padding-left: 10px; }
+.markdown-body table.hljs-ln .hljs-ln-n { padding-right: 8px; color: var(--g-color-40); }
+.markdown-body table.hljs-ln .hljs-ln-n::before { content: attr(data-line-number); }
+.markdown-body .wrap-code table.hljs-ln td { white-space: pre-wrap; box-shadow: none !important; }
+.markdown-body table.small td, .markdown-body table.small th { padding: 3px 6px; font-size: 14px; line-height: 1.3; }
+.markdown-body .footnote-backref { padding: 0px 4px; font-family: system-ui; vertical-align: middle; }
+.katex { text-rendering: auto; font: 1.21em / 1.2 KaTeX_Main, "Times New Roman", serif; text-indent: 0px; }
+.katex * { border-color: currentcolor; }
+.katex .katex-version::after { content: "0.15.3"; }
+.katex .katex-mathml { clip: rect(1px, 1px, 1px, 1px); border: 0px; height: 1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+.katex .katex-html > .newline { display: block; }
+.katex .base { position: relative; white-space: nowrap; width: min-content; }
+.katex .base, .katex .strut { display: inline-block; }
+.katex .textbf { font-weight: 700; }
+.katex .textit { font-style: italic; }
+.katex .textrm { font-family: KaTeX_Main; }
+.katex .textsf { font-family: KaTeX_SansSerif; }
+.katex .texttt { font-family: KaTeX_Typewriter; }
+.katex .mathnormal { font-family: KaTeX_Math; font-style: italic; }
+.katex .mathit { font-family: KaTeX_Main; font-style: italic; }
+.katex .mathrm { font-style: normal; }
+.katex .mathbf { font-family: KaTeX_Main; font-weight: 700; }
+.katex .boldsymbol { font-family: KaTeX_Math; font-style: italic; font-weight: 700; }
+.katex .amsrm, .katex .mathbb, .katex .textbb { font-family: KaTeX_AMS; }
+.katex .mathcal { font-family: KaTeX_Caligraphic; }
+.katex .mathfrak, .katex .textfrak { font-family: KaTeX_Fraktur; }
+.katex .mathtt { font-family: KaTeX_Typewriter; }
+.katex .mathscr, .katex .textscr { font-family: KaTeX_Script; }
+.katex .mathsf, .katex .textsf { font-family: KaTeX_SansSerif; }
+.katex .mathboldsf, .katex .textboldsf { font-family: KaTeX_SansSerif; font-weight: 700; }
+.katex .mathitsf, .katex .textitsf { font-family: KaTeX_SansSerif; font-style: italic; }
+.katex .mainrm { font-family: KaTeX_Main; font-style: normal; }
+.katex .vlist-t { border-collapse: collapse; display: inline-table; table-layout: fixed; }
+.katex .vlist-r { display: table-row; }
+.katex .vlist { display: table-cell; position: relative; vertical-align: bottom; }
+.katex .vlist > span { display: block; height: 0px; position: relative; }
+.katex .vlist > span > span { display: inline-block; }
+.katex .vlist > span > .pstrut { overflow: hidden; width: 0px; }
+.katex .vlist-t2 { margin-right: -2px; }
+.katex .vlist-s { display: table-cell; font-size: 1px; min-width: 2px; vertical-align: bottom; width: 2px; }
+.katex .vbox { align-items: baseline; display: inline-flex; flex-direction: column; }
+.katex .hbox { width: 100%; }
+.katex .hbox, .katex .thinbox { display: inline-flex; flex-direction: row; }
+.katex .thinbox { max-width: 0px; width: 0px; }
+.katex .msupsub { text-align: left; }
+.katex .mfrac > span > span { text-align: center; }
+.katex .mfrac .frac-line { border-bottom-style: solid; display: inline-block; width: 100%; }
+.katex .hdashline, .katex .hline, .katex .mfrac .frac-line, .katex .overline .overline-line, .katex .rule, .katex .underline .underline-line { min-height: 1px; }
+.katex .mspace { display: inline-block; }
+.katex .clap, .katex .llap, .katex .rlap { position: relative; width: 0px; }
+.katex .clap > .inner, .katex .llap > .inner, .katex .rlap > .inner { position: absolute; }
+.katex .clap > .fix, .katex .llap > .fix, .katex .rlap > .fix { display: inline-block; }
+.katex .llap > .inner { right: 0px; }
+.katex .clap > .inner, .katex .rlap > .inner { left: 0px; }
+.katex .clap > .inner > span { margin-left: -50%; margin-right: 50%; }
+.katex .rule { border: 0px solid; display: inline-block; position: relative; }
+.katex .hline, .katex .overline .overline-line, .katex .underline .underline-line { border-bottom-style: solid; display: inline-block; width: 100%; }
+.katex .hdashline { border-bottom-style: dashed; display: inline-block; width: 100%; }
+.katex .sqrt > .root { margin-left: 0.277778em; margin-right: -0.555556em; }
+.katex .fontsize-ensurer.reset-size1.size1, .katex .sizing.reset-size1.size1 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size1.size2, .katex .sizing.reset-size1.size2 { font-size: 1.2em; }
+.katex .fontsize-ensurer.reset-size1.size3, .katex .sizing.reset-size1.size3 { font-size: 1.4em; }
+.katex .fontsize-ensurer.reset-size1.size4, .katex .sizing.reset-size1.size4 { font-size: 1.6em; }
+.katex .fontsize-ensurer.reset-size1.size5, .katex .sizing.reset-size1.size5 { font-size: 1.8em; }
+.katex .fontsize-ensurer.reset-size1.size6, .katex .sizing.reset-size1.size6 { font-size: 2em; }
+.katex .fontsize-ensurer.reset-size1.size7, .katex .sizing.reset-size1.size7 { font-size: 2.4em; }
+.katex .fontsize-ensurer.reset-size1.size8, .katex .sizing.reset-size1.size8 { font-size: 2.88em; }
+.katex .fontsize-ensurer.reset-size1.size9, .katex .sizing.reset-size1.size9 { font-size: 3.456em; }
+.katex .fontsize-ensurer.reset-size1.size10, .katex .sizing.reset-size1.size10 { font-size: 4.148em; }
+.katex .fontsize-ensurer.reset-size1.size11, .katex .sizing.reset-size1.size11 { font-size: 4.976em; }
+.katex .fontsize-ensurer.reset-size2.size1, .katex .sizing.reset-size2.size1 { font-size: 0.833333em; }
+.katex .fontsize-ensurer.reset-size2.size2, .katex .sizing.reset-size2.size2 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size2.size3, .katex .sizing.reset-size2.size3 { font-size: 1.16667em; }
+.katex .fontsize-ensurer.reset-size2.size4, .katex .sizing.reset-size2.size4 { font-size: 1.33333em; }
+.katex .fontsize-ensurer.reset-size2.size5, .katex .sizing.reset-size2.size5 { font-size: 1.5em; }
+.katex .fontsize-ensurer.reset-size2.size6, .katex .sizing.reset-size2.size6 { font-size: 1.66667em; }
+.katex .fontsize-ensurer.reset-size2.size7, .katex .sizing.reset-size2.size7 { font-size: 2em; }
+.katex .fontsize-ensurer.reset-size2.size8, .katex .sizing.reset-size2.size8 { font-size: 2.4em; }
+.katex .fontsize-ensurer.reset-size2.size9, .katex .sizing.reset-size2.size9 { font-size: 2.88em; }
+.katex .fontsize-ensurer.reset-size2.size10, .katex .sizing.reset-size2.size10 { font-size: 3.45667em; }
+.katex .fontsize-ensurer.reset-size2.size11, .katex .sizing.reset-size2.size11 { font-size: 4.14667em; }
+.katex .fontsize-ensurer.reset-size3.size1, .katex .sizing.reset-size3.size1 { font-size: 0.714286em; }
+.katex .fontsize-ensurer.reset-size3.size2, .katex .sizing.reset-size3.size2 { font-size: 0.857143em; }
+.katex .fontsize-ensurer.reset-size3.size3, .katex .sizing.reset-size3.size3 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size3.size4, .katex .sizing.reset-size3.size4 { font-size: 1.14286em; }
+.katex .fontsize-ensurer.reset-size3.size5, .katex .sizing.reset-size3.size5 { font-size: 1.28571em; }
+.katex .fontsize-ensurer.reset-size3.size6, .katex .sizing.reset-size3.size6 { font-size: 1.42857em; }
+.katex .fontsize-ensurer.reset-size3.size7, .katex .sizing.reset-size3.size7 { font-size: 1.71429em; }
+.katex .fontsize-ensurer.reset-size3.size8, .katex .sizing.reset-size3.size8 { font-size: 2.05714em; }
+.katex .fontsize-ensurer.reset-size3.size9, .katex .sizing.reset-size3.size9 { font-size: 2.46857em; }
+.katex .fontsize-ensurer.reset-size3.size10, .katex .sizing.reset-size3.size10 { font-size: 2.96286em; }
+.katex .fontsize-ensurer.reset-size3.size11, .katex .sizing.reset-size3.size11 { font-size: 3.55429em; }
+.katex .fontsize-ensurer.reset-size4.size1, .katex .sizing.reset-size4.size1 { font-size: 0.625em; }
+.katex .fontsize-ensurer.reset-size4.size2, .katex .sizing.reset-size4.size2 { font-size: 0.75em; }
+.katex .fontsize-ensurer.reset-size4.size3, .katex .sizing.reset-size4.size3 { font-size: 0.875em; }
+.katex .fontsize-ensurer.reset-size4.size4, .katex .sizing.reset-size4.size4 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size4.size5, .katex .sizing.reset-size4.size5 { font-size: 1.125em; }
+.katex .fontsize-ensurer.reset-size4.size6, .katex .sizing.reset-size4.size6 { font-size: 1.25em; }
+.katex .fontsize-ensurer.reset-size4.size7, .katex .sizing.reset-size4.size7 { font-size: 1.5em; }
+.katex .fontsize-ensurer.reset-size4.size8, .katex .sizing.reset-size4.size8 { font-size: 1.8em; }
+.katex .fontsize-ensurer.reset-size4.size9, .katex .sizing.reset-size4.size9 { font-size: 2.16em; }
+.katex .fontsize-ensurer.reset-size4.size10, .katex .sizing.reset-size4.size10 { font-size: 2.5925em; }
+.katex .fontsize-ensurer.reset-size4.size11, .katex .sizing.reset-size4.size11 { font-size: 3.11em; }
+.katex .fontsize-ensurer.reset-size5.size1, .katex .sizing.reset-size5.size1 { font-size: 0.555556em; }
+.katex .fontsize-ensurer.reset-size5.size2, .katex .sizing.reset-size5.size2 { font-size: 0.666667em; }
+.katex .fontsize-ensurer.reset-size5.size3, .katex .sizing.reset-size5.size3 { font-size: 0.777778em; }
+.katex .fontsize-ensurer.reset-size5.size4, .katex .sizing.reset-size5.size4 { font-size: 0.888889em; }
+.katex .fontsize-ensurer.reset-size5.size5, .katex .sizing.reset-size5.size5 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size5.size6, .katex .sizing.reset-size5.size6 { font-size: 1.11111em; }
+.katex .fontsize-ensurer.reset-size5.size7, .katex .sizing.reset-size5.size7 { font-size: 1.33333em; }
+.katex .fontsize-ensurer.reset-size5.size8, .katex .sizing.reset-size5.size8 { font-size: 1.6em; }
+.katex .fontsize-ensurer.reset-size5.size9, .katex .sizing.reset-size5.size9 { font-size: 1.92em; }
+.katex .fontsize-ensurer.reset-size5.size10, .katex .sizing.reset-size5.size10 { font-size: 2.30444em; }
+.katex .fontsize-ensurer.reset-size5.size11, .katex .sizing.reset-size5.size11 { font-size: 2.76444em; }
+.katex .fontsize-ensurer.reset-size6.size1, .katex .sizing.reset-size6.size1 { font-size: 0.5em; }
+.katex .fontsize-ensurer.reset-size6.size2, .katex .sizing.reset-size6.size2 { font-size: 0.6em; }
+.katex .fontsize-ensurer.reset-size6.size3, .katex .sizing.reset-size6.size3 { font-size: 0.7em; }
+.katex .fontsize-ensurer.reset-size6.size4, .katex .sizing.reset-size6.size4 { font-size: 0.8em; }
+.katex .fontsize-ensurer.reset-size6.size5, .katex .sizing.reset-size6.size5 { font-size: 0.9em; }
+.katex .fontsize-ensurer.reset-size6.size6, .katex .sizing.reset-size6.size6 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size6.size7, .katex .sizing.reset-size6.size7 { font-size: 1.2em; }
+.katex .fontsize-ensurer.reset-size6.size8, .katex .sizing.reset-size6.size8 { font-size: 1.44em; }
+.katex .fontsize-ensurer.reset-size6.size9, .katex .sizing.reset-size6.size9 { font-size: 1.728em; }
+.katex .fontsize-ensurer.reset-size6.size10, .katex .sizing.reset-size6.size10 { font-size: 2.074em; }
+.katex .fontsize-ensurer.reset-size6.size11, .katex .sizing.reset-size6.size11 { font-size: 2.488em; }
+.katex .fontsize-ensurer.reset-size7.size1, .katex .sizing.reset-size7.size1 { font-size: 0.416667em; }
+.katex .fontsize-ensurer.reset-size7.size2, .katex .sizing.reset-size7.size2 { font-size: 0.5em; }
+.katex .fontsize-ensurer.reset-size7.size3, .katex .sizing.reset-size7.size3 { font-size: 0.583333em; }
+.katex .fontsize-ensurer.reset-size7.size4, .katex .sizing.reset-size7.size4 { font-size: 0.666667em; }
+.katex .fontsize-ensurer.reset-size7.size5, .katex .sizing.reset-size7.size5 { font-size: 0.75em; }
+.katex .fontsize-ensurer.reset-size7.size6, .katex .sizing.reset-size7.size6 { font-size: 0.833333em; }
+.katex .fontsize-ensurer.reset-size7.size7, .katex .sizing.reset-size7.size7 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size7.size8, .katex .sizing.reset-size7.size8 { font-size: 1.2em; }
+.katex .fontsize-ensurer.reset-size7.size9, .katex .sizing.reset-size7.size9 { font-size: 1.44em; }
+.katex .fontsize-ensurer.reset-size7.size10, .katex .sizing.reset-size7.size10 { font-size: 1.72833em; }
+.katex .fontsize-ensurer.reset-size7.size11, .katex .sizing.reset-size7.size11 { font-size: 2.07333em; }
+.katex .fontsize-ensurer.reset-size8.size1, .katex .sizing.reset-size8.size1 { font-size: 0.347222em; }
+.katex .fontsize-ensurer.reset-size8.size2, .katex .sizing.reset-size8.size2 { font-size: 0.416667em; }
+.katex .fontsize-ensurer.reset-size8.size3, .katex .sizing.reset-size8.size3 { font-size: 0.486111em; }
+.katex .fontsize-ensurer.reset-size8.size4, .katex .sizing.reset-size8.size4 { font-size: 0.555556em; }
+.katex .fontsize-ensurer.reset-size8.size5, .katex .sizing.reset-size8.size5 { font-size: 0.625em; }
+.katex .fontsize-ensurer.reset-size8.size6, .katex .sizing.reset-size8.size6 { font-size: 0.694444em; }
+.katex .fontsize-ensurer.reset-size8.size7, .katex .sizing.reset-size8.size7 { font-size: 0.833333em; }
+.katex .fontsize-ensurer.reset-size8.size8, .katex .sizing.reset-size8.size8 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size8.size9, .katex .sizing.reset-size8.size9 { font-size: 1.2em; }
+.katex .fontsize-ensurer.reset-size8.size10, .katex .sizing.reset-size8.size10 { font-size: 1.44028em; }
+.katex .fontsize-ensurer.reset-size8.size11, .katex .sizing.reset-size8.size11 { font-size: 1.72778em; }
+.katex .fontsize-ensurer.reset-size9.size1, .katex .sizing.reset-size9.size1 { font-size: 0.289352em; }
+.katex .fontsize-ensurer.reset-size9.size2, .katex .sizing.reset-size9.size2 { font-size: 0.347222em; }
+.katex .fontsize-ensurer.reset-size9.size3, .katex .sizing.reset-size9.size3 { font-size: 0.405093em; }
+.katex .fontsize-ensurer.reset-size9.size4, .katex .sizing.reset-size9.size4 { font-size: 0.462963em; }
+.katex .fontsize-ensurer.reset-size9.size5, .katex .sizing.reset-size9.size5 { font-size: 0.520833em; }
+.katex .fontsize-ensurer.reset-size9.size6, .katex .sizing.reset-size9.size6 { font-size: 0.578704em; }
+.katex .fontsize-ensurer.reset-size9.size7, .katex .sizing.reset-size9.size7 { font-size: 0.694444em; }
+.katex .fontsize-ensurer.reset-size9.size8, .katex .sizing.reset-size9.size8 { font-size: 0.833333em; }
+.katex .fontsize-ensurer.reset-size9.size9, .katex .sizing.reset-size9.size9 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size9.size10, .katex .sizing.reset-size9.size10 { font-size: 1.20023em; }
+.katex .fontsize-ensurer.reset-size9.size11, .katex .sizing.reset-size9.size11 { font-size: 1.43981em; }
+.katex .fontsize-ensurer.reset-size10.size1, .katex .sizing.reset-size10.size1 { font-size: 0.24108em; }
+.katex .fontsize-ensurer.reset-size10.size2, .katex .sizing.reset-size10.size2 { font-size: 0.289296em; }
+.katex .fontsize-ensurer.reset-size10.size3, .katex .sizing.reset-size10.size3 { font-size: 0.337512em; }
+.katex .fontsize-ensurer.reset-size10.size4, .katex .sizing.reset-size10.size4 { font-size: 0.385728em; }
+.katex .fontsize-ensurer.reset-size10.size5, .katex .sizing.reset-size10.size5 { font-size: 0.433944em; }
+.katex .fontsize-ensurer.reset-size10.size6, .katex .sizing.reset-size10.size6 { font-size: 0.48216em; }
+.katex .fontsize-ensurer.reset-size10.size7, .katex .sizing.reset-size10.size7 { font-size: 0.578592em; }
+.katex .fontsize-ensurer.reset-size10.size8, .katex .sizing.reset-size10.size8 { font-size: 0.694311em; }
+.katex .fontsize-ensurer.reset-size10.size9, .katex .sizing.reset-size10.size9 { font-size: 0.833173em; }
+.katex .fontsize-ensurer.reset-size10.size10, .katex .sizing.reset-size10.size10 { font-size: 1em; }
+.katex .fontsize-ensurer.reset-size10.size11, .katex .sizing.reset-size10.size11 { font-size: 1.19961em; }
+.katex .fontsize-ensurer.reset-size11.size1, .katex .sizing.reset-size11.size1 { font-size: 0.200965em; }
+.katex .fontsize-ensurer.reset-size11.size2, .katex .sizing.reset-size11.size2 { font-size: 0.241158em; }
+.katex .fontsize-ensurer.reset-size11.size3, .katex .sizing.reset-size11.size3 { font-size: 0.28135em; }
+.katex .fontsize-ensurer.reset-size11.size4, .katex .sizing.reset-size11.size4 { font-size: 0.321543em; }
+.katex .fontsize-ensurer.reset-size11.size5, .katex .sizing.reset-size11.size5 { font-size: 0.361736em; }
+.katex .fontsize-ensurer.reset-size11.size6, .katex .sizing.reset-size11.size6 { font-size: 0.401929em; }
+.katex .fontsize-ensurer.reset-size11.size7, .katex .sizing.reset-size11.size7 { font-size: 0.482315em; }
+.katex .fontsize-ensurer.reset-size11.size8, .katex .sizing.reset-size11.size8 { font-size: 0.578778em; }
+.katex .fontsize-ensurer.reset-size11.size9, .katex .sizing.reset-size11.size9 { font-size: 0.694534em; }
+.katex .fontsize-ensurer.reset-size11.size10, .katex .sizing.reset-size11.size10 { font-size: 0.833601em; }
+.katex .fontsize-ensurer.reset-size11.size11, .katex .sizing.reset-size11.size11 { font-size: 1em; }
+.katex .delimsizing.size1 { font-family: KaTeX_Size1; }
+.katex .delimsizing.size2 { font-family: KaTeX_Size2; }
+.katex .delimsizing.size3 { font-family: KaTeX_Size3; }
+.katex .delimsizing.size4 { font-family: KaTeX_Size4; }
+.katex .delimsizing.mult .delim-size1 > span { font-family: KaTeX_Size1; }
+.katex .delimsizing.mult .delim-size4 > span { font-family: KaTeX_Size4; }
+.katex .nulldelimiter { display: inline-block; width: 0.12em; }
+.katex .delimcenter, .katex .op-symbol { position: relative; }
+.katex .op-symbol.small-op { font-family: KaTeX_Size1; }
+.katex .op-symbol.large-op { font-family: KaTeX_Size2; }
+.katex .accent > .vlist-t, .katex .op-limits > .vlist-t { text-align: center; }
+.katex .accent .accent-body { position: relative; }
+.katex .accent .accent-body:not(.accent-full) { width: 0px; }
+.katex .overlay { display: block; }
+.katex .mtable .vertical-separator { display: inline-block; min-width: 1px; }
+.katex .mtable .arraycolsep { display: inline-block; }
+.katex .mtable .col-align-c > .vlist-t { text-align: center; }
+.katex .mtable .col-align-l > .vlist-t { text-align: left; }
+.katex .mtable .col-align-r > .vlist-t { text-align: right; }
+.katex .svg-align { text-align: left; }
+.katex svg { fill: currentcolor; stroke: currentcolor; fill-rule: nonzero; fill-opacity: 1; stroke-width: 1; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-dashoffset: 0; stroke-opacity: 1; display: block; height: inherit; position: absolute; width: 100%; }
+.katex svg path { stroke: none; }
+.katex img { border-style: none; max-height: none; max-width: none; min-height: 0px; min-width: 0px; }
+.katex .stretchy { display: block; overflow: hidden; position: relative; width: 100%; }
+.katex .stretchy::after, .katex .stretchy::before { content: ""; }
+.katex .hide-tail { overflow: hidden; position: relative; width: 100%; }
+.katex .halfarrow-left { left: 0px; overflow: hidden; position: absolute; width: 50.2%; }
+.katex .halfarrow-right { overflow: hidden; position: absolute; right: 0px; width: 50.2%; }
+.katex .brace-left { left: 0px; overflow: hidden; position: absolute; width: 25.1%; }
+.katex .brace-center { left: 25%; overflow: hidden; position: absolute; width: 50%; }
+.katex .brace-right { overflow: hidden; position: absolute; right: 0px; width: 25.1%; }
+.katex .x-arrow-pad { padding: 0px 0.5em; }
+.katex .cd-arrow-pad { padding: 0px 0.55556em 0px 0.27778em; }
+.katex .mover, .katex .munder, .katex .x-arrow { text-align: center; }
+.katex .boxpad { padding: 0px 0.3em; }
+.katex .fbox, .katex .fcolorbox { border: 0.04em solid; box-sizing: border-box; }
+.katex .cancel-pad { padding: 0px 0.2em; }
+.katex .cancel-lap { margin-left: -0.2em; margin-right: -0.2em; }
+.katex .sout { border-bottom-style: solid; border-bottom-width: 0.08em; }
+.katex .angl { border-right: 0.049em solid; border-top: 0.049em solid; box-sizing: border-box; margin-right: 0.03889em; }
+.katex .anglpad { padding: 0px 0.03889em; }
+.katex .eqn-num::before { content: "(" counter(katexEqnNo) ")"; counter-increment: katexEqnNo 1; }
+.katex .mml-eqn-num::before { content: "(" counter(mmlEqnNo) ")"; counter-increment: mmlEqnNo 1; }
+.katex .mtr-glue { width: 50%; }
+.katex .cd-vert-arrow { display: inline-block; position: relative; }
+.katex .cd-label-left { display: inline-block; position: absolute; right: calc(50% + 0.3em); text-align: left; }
+.katex .cd-label-right { display: inline-block; left: calc(50% + 0.3em); position: absolute; text-align: right; }
+.katex-display { display: block; margin: 1em 0px; text-align: center; }
+.katex-display > .katex { display: block; text-align: center; white-space: nowrap; }
+.katex-display > .katex > .katex-html { display: block; position: relative; }
+.katex-display > .katex > .katex-html > .tag { position: absolute; right: 0px; }
+.katex-display.leqno > .katex > .katex-html > .tag { left: 0px; right: auto; }
+.katex-display.fleqn > .katex { padding-left: 2em; text-align: left; }
+.markdown-body .katex { background: initial; }
+.markdown-body .p-mcc-copy-btn-wrapper { width: 0px; height: 0px; position: sticky; left: 100%; top: 0px; float: right; }
+.markdown-body .p-mcc-language { position: absolute; top: -11px; right: -8px; opacity: 1; color: var(--g-color-50); font-size: 12px; transition: opacity 200ms ease 0s; user-select: none; line-height: 1; }
+.markdown-body .p-mcc-copy-btn { width: 20px; height: 20px; position: relative; right: 12px; top: -10px; padding: 6px; border-radius: 50%; opacity: 0; transition: opacity 200ms ease 0s; display: flex; align-items: center; color: var(--g-color-30) ; }
+.markdown-body pre:hover .p-mcc-copy-btn { opacity: 1; }
+.markdown-body pre:hover .p-mcc-language { opacity: 0; }
+.markdown-body .p-mcc-copy-btn:hover { background: var(--g-color-80); }
+.markdown-body .svg-icon { width: 18px; height: 18px; display: inline-block; text-align: center; vertical-align: middle; }
+.markdown-body .svg-icon svg { width: 100%; height: 100%; display: inline-block; }
+.markdown-body .p-mcr-run-code-action { position: sticky; left: 0px; border-top: 1px dashed rgb(136, 136, 136); margin: 1em 0px; }
+.markdown-body .p-mcr-run-btn { position: absolute; top: -0.7em; height: 0px; width: 0px; border-width: 0.6em 0px 0.6em 0.7em; border-left-style: solid; border-left-color: rgb(183, 179, 179); border-top-style: solid; border-top-color: rgba(221, 221, 221, 0); border-bottom-style: solid; border-bottom-color: rgba(221, 221, 221, 0); border-right-style: initial; border-right-color: initial; background: rgba(0, 0, 0, 0); cursor: pointer; outline: none; }
+.markdown-body .p-mcr-run-xterm-btn { position: absolute; top: -0.5em; right: 0px; height: 0px; width: 0px; border-width: 0.6em 0px 0.6em 0.7em; border-left-style: solid; border-left-color: rgb(183, 179, 179); border-top-style: solid; border-top-color: rgba(221, 221, 221, 0); border-bottom-style: solid; border-bottom-color: rgba(221, 221, 221, 0); border-right-style: initial; border-right-color: initial; background: rgba(0, 0, 0, 0); cursor: pointer; outline: none; transform: rotate(90deg); }
+.markdown-body .p-mcr-clear-btn-wrapper { width: 0px; height: 0px; position: sticky; left: 100%; bottom: 0px; float: right; }
+.markdown-body .p-mcr-clear-btn { width: 20px; height: 20px; position: relative; right: 12px; bottom: 10px; padding: 6px; border-radius: 50%; transition: opacity 200ms ease 0s; display: flex; align-items: center; color: var(--g-color-30) ; }
+.markdown-body .p-mcr-clear-btn:hover { background: var(--g-color-80); }
+.markdown-body .mind-map { overflow: hidden; }
+.markdown-body .mind-map > div { margin-top: -20px; }
+.markdown-body .mind-map .mind-map-action { position: absolute; right: 10px; top: 23px; z-index: 1; text-align: right; background: transparent; opacity: 0; transition: opacity 0.2s ease 0s; }
+.markdown-body .mind-map:hover .mind-map-action { opacity: 1; }
+.markdown-body .custom-container.section { padding: 12px; border: 1px solid var(--g-color-80); border-radius: var(--g-border-radius); margin-top: 16px; position: relative; }
+.markdown-body .custom-container.section > :first-child { margin-top: 0px; }
+.markdown-body .custom-container.row { display: flex; justify-content: space-between; position: relative; margin-top: 16px; }
+.markdown-body .custom-container.row.has-title { border-top: 24px solid transparent; }
+.markdown-body .custom-container.row > .custom-container-title { background: var(--g-color-80); position: absolute; padding-left: 8px; margin: 0px; font-size: 14px; line-height: 2.2em; left: 0px; top: -2.2em; width: 100%; border: 1px solid var(--g-color-80); border-top-left-radius: var(--g-border-radius); border-top-right-radius: var(--g-border-radius); }
+.markdown-body .custom-container.row > .custom-container.col > .custom-container-title { font-size: 14px; line-height: 1.2; }
+.markdown-body .custom-container.col { width: 100%; padding: 12px 12px 0px; border: 1px solid var(--g-color-80); border-radius: var(--g-border-radius); margin-right: 8px; background: var(--g-color-100); }
+.markdown-body .custom-container.row.has-title > .custom-container.col { margin-right: -1px; border-radius: 0px; }
+.markdown-body .custom-container.col:last-of-type, .markdown-body .custom-container.row.has-title > .custom-container.col:last-of-type { margin-right: 0px; border-bottom-right-radius: var(--g-border-radius); }
+.markdown-body .custom-container.row.has-title > .custom-container.col:first-of-type { border-bottom-left-radius: var(--g-border-radius); }
+.markdown-body .custom-container.details, .markdown-body .custom-container.danger, .markdown-body .custom-container.warning, .markdown-body .custom-container.tip { padding: 16px 16px 2px; margin: 16px 0px; border-left-width: 8px; border-left-style: solid; border-radius: var(--g-border-radius); }
+.markdown-body .custom-container.danger, .markdown-body .custom-container.warning, .markdown-body .custom-container.tip { break-inside: avoid; }
+.markdown-body .custom-container-title { font-weight: 600; margin-bottom: 10px; margin-top: -6px; font-size: 1.1em; }
+.markdown-body .custom-container.danger { border-color: rgb(204, 0, 0); background-color: rgb(255, 224, 224); color: rgb(102, 0, 0); }
+.markdown-body .custom-container.warning { border-color: rgb(231, 192, 0); background-color: rgb(255, 250, 227); color: rgb(116, 96, 0); }
+.markdown-body .custom-container.tip { border-color: rgb(66, 185, 131); background-color: var(--g-color-90); color: var(--g-color-10); }
+.markdown-body .custom-container.details { border: none; background-color: var(--g-color-90); padding: 16px 20px; }
+.markdown-body .custom-container.details > summary { margin-top: 0px; }
+.markdown-body .custom-container.details > summary + *, .markdown-body .custom-container.details > :first-child:not(summary) { margin-top: 16px; }
+.markdown-body .custom-container.details > :last-child:not(summary) { margin-bottom: 0px; }
+.markdown-body .custom-container.group { position: relative; display: flex; flex-wrap: wrap; margin-bottom: 16px; background: var(--g-color-80); border-radius: var(--g-border-radius); border: 1px solid var(--g-color-80); }
+.markdown-body .custom-container.group p { order: 100; width: 100%; }
+.markdown-body .custom-container.group > .custom-container-title { order: 1; padding-left: 8px; margin: 0px; font-size: 14px; line-height: 2.2em; }
+.markdown-body .custom-container.group .group-item-radio { display: none; }
+.markdown-body .custom-container.group .group-item-label { order: 1; cursor: pointer; font-size: 14px; line-height: 2; padding: 0px 1em; color: var(--g-color-20); }
+.markdown-body .custom-container.group .group-item-label:hover { background: var(--g-color-85); }
+.markdown-body .custom-container.group .group-item-content { order: 2; width: 100%; display: none; border-top-right-radius: ; border-bottom-right-radius: ; border-bottom-left-radius: ; border-top-left-radius: 0px; padding: 12px 12px 0px; background: var(--g-color-100); }
+.markdown-body .custom-container.group .group-item-radio:checked + .group-item-label { background: var(--g-color-100); border-top-left-radius: var(--g-border-radius); border-top-right-radius: var(--g-border-radius); color: var(--g-color-0); font-weight: 500; }
+.markdown-body .custom-container.group .group-item-radio:checked + .group-item-label + .group-item-content { display: block; }
+.markdown-body { counter-reset: h2counter 0 h3counter 0 h4counter 0 h5counter 0 h6counter 0; }
+.markdown-body h1.show-number { counter-reset: h2counter 0; }
+.markdown-body h2.show-number { counter-reset: h3counter 0; }
+.markdown-body h3.show-number { counter-reset: h4counter 0; }
+.markdown-body h4.show-number { counter-reset: h5counter 0; }
+.markdown-body h5.show-number { counter-reset: h6counter 0; }
+.markdown-body h2.show-number::before { counter-increment: h2counter 1; content: counter(h2counter) ".  "; }
+.markdown-body h3.show-number::before { counter-increment: h3counter 1; content: counter(h2counter) "." counter(h3counter) ".  "; }
+.markdown-body h4.show-number::before { counter-increment: h4counter 1; content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) ".  "; }
+.markdown-body h5.show-number::before { counter-increment: h5counter 1; content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) ".  "; }
+.markdown-body h6.show-number::before { counter-increment: h6counter 1; content: counter(h2counter) "." counter(h3counter) "." counter(h4counter) "." counter(h5counter) "." counter(h6counter) ".  "; }
+
+        </style>
+  </head>
+  <body>
+    <article class="markdown-body" data-v-26692da4="" powered-by="Yank Note"><h1 data-source-line="1" data-source-line-end="2" data-token-idx="0" id="%E5%B7%A5%E4%B8%9A%E7%AE%97%E7%BD%91%E5%B9%B3%E5%8F%B0%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96" data-tag="h1">工业算网平台隐私政策</h1><blockquote data-source-line="3" data-source-line-end="4" data-token-idx="3"><p data-source-line="3" data-source-line-end="4" data-token-idx="4"><strong>更新时间：2022 年 11 月 05 日</strong> <strong>版本：V 1.0</strong></p></blockquote><p data-source-line="5" data-source-line-end="6" data-token-idx="8">中国联通（以下简称“我们”）非常重视用户隐私和个人信息保护，并将按照法律法规要求，采取安全保护措施，保护您的个人信息安全可控。请您在使用工业算网平台（以下简称“本平台”）前，仔细阅读并了解《工业算网平台隐私政策》（以下简称“本隐私政策”）。如果您签署或点击确认本隐私政策，即表示您已经理解并同意本隐私政策全部内容。如果您对本隐私政策的内容有任何疑问，请勿进行下一步操作，并可通过本隐私政策提供的联系方式与我们联系。</p><p data-source-line="7" data-source-line-end="8" data-token-idx="11">您在使用我们的产品或服务时，我们将按照《中华人民共和国个人信息保护法》等国家法律法规及监管政策的相关要求，在获得您授权同意的情况下（法律另有规定的除外）处理您的个人信息。我们希望通过本隐私政策向您说明：在您使用我们的产品或服务时，我们会收集哪些信息、为什么收集这些信息、会利用这些信息做什么以及我们如何保护这些信息。</p><h2 data-source-line="9" data-source-line-end="10" data-token-idx="14" id="%E6%9C%AC%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96%E5%8C%85%E5%90%AB%E4%BB%A5%E4%B8%8B%E5%86%85%E5%AE%B9" data-tag="h2">本隐私政策包含以下内容</h2><p data-source-line="11" data-source-line-end="12" data-token-idx="17">本隐私政策的适用范围；</p><p data-source-line="13" data-source-line-end="14" data-token-idx="20">我们如何收集和使用您的个人信息；</p><p data-source-line="15" data-source-line-end="16" data-token-idx="23">我们如何使用 Cookie 和同类技术；</p><p data-source-line="17" data-source-line-end="18" data-token-idx="26">我们如何共享、转让、公开披露您的个人信息；</p><p data-source-line="19" data-source-line-end="20" data-token-idx="29">我们如何保护您的个人信息；</p><p data-source-line="21" data-source-line-end="22" data-token-idx="32">我们如何处理未成年人的个人信息；</p><p data-source-line="23" data-source-line-end="24" data-token-idx="35">本隐私政策如何更新；</p><p data-source-line="25" data-source-line-end="26" data-token-idx="38">您的权利；</p><p data-source-line="27" data-source-line-end="28" data-token-idx="41">如何联系我们。</p><h2 data-source-line="29" data-source-line-end="30" data-token-idx="44" id="1.-%E6%9C%AC%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96%E7%9A%84%E9%80%82%E7%94%A8%E8%8C%83%E5%9B%B4" data-tag="h2">1. 本隐私政策的适用范围</h2><p data-source-line="31" data-source-line-end="32" data-token-idx="47">本隐私政策适用于中国联通及其关联公司为您提供的工业算网平台服务而订立的有效合约，本隐私政策另有约定除外。</p><h2 data-source-line="33" data-source-line-end="34" data-token-idx="50" id="2.-%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E6%94%B6%E9%9B%86%E5%92%8C%E4%BD%BF%E7%94%A8%E6%82%A8%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF" data-tag="h2">2. 我们如何收集和使用您的个人信息</h2><p data-source-line="35" data-source-line-end="36" data-token-idx="53">在您使用本平台时，我们可能收集您的以下信息：</p><p data-source-line="37" data-source-line-end="38" data-token-idx="56">2.1 您主动提交的信息。您或您授权的主体在注册账号、完善信息等情况下填写、上传的相应信息，例如您的用户名、真实姓名以及您设置的登录密码。</p><p data-source-line="39" data-source-line-end="40" data-token-idx="59">2.2 我们的员工或合作伙伴代为提交、记录的信息，例如您在使用本平台时委托我们填写、上传的您的相应信息。</p><p data-source-line="41" data-source-line-end="42" data-token-idx="62">2.3 我们在您使用本平台的过程中以主动收集或产生相应的记录等方式收集的信息，例如您在登录本平台时后台记录下的登录时间等信息。</p><p data-source-line="43" data-source-line-end="44" data-token-idx="65">2.4 您在使用本平台的过程中，在完善您的用户信息时填写的手机号码、邮箱及翼辉 ID。您提交的手机号码、邮箱用于您登录、绑定账号、密码找回时接受验证码。</p><p data-source-line="45" data-source-line-end="46" data-token-idx="68">2.5 您在登录本平台时，使用翼辉 ID 与本平台登录账号进行关联、绑定，您将授权本平台获得您翼辉 ID 的相关信息，例如翼辉 ID 绑定的手机号等信息。</p><p data-source-line="47" data-source-line-end="48" data-token-idx="71">2.6 设备信息：我们会根据您在使用本平台及使用中授予的具体权限，接收并记录您所使用的设备相关信息（例如设备型号、操作系统版本、设备设置、MAC 地址、IMEI、IDFA、OAID 及其他设备标识符等软硬件特征信息）、设备所在位置相关信息（例如 IP 地址、 GPS 位置以及能够提供相关信息的 Wi-Fi 接入点、蓝牙和基站等传感器信息）。我们可能会将前面两类信息进行关联，以便我们能在不同设备上为您提供一致的服务。</p><p data-source-line="49" data-source-line-end="50" data-token-idx="74">2.7 日志信息：当您使用本平台提供的服务时，我们会自动收集您对我们服务的详细使用情况，作为有关网络日志保存。例如您的搜索查询内容、IP 地址、浏览器的类型、使用的语言、访问日期和时间及您访问的网页记录等。</p><p data-source-line="51" data-source-line-end="52" data-token-idx="77">2.8 用户账号的支持信息：基于您使用本平台而产生的用户的咨询记录、报障记录和针对用户故障的排障过程（如通信或通话记录），我们将通过记录、分析这些信息以便更及时响应您的帮助请求，以及用于改进服务。</p><p data-source-line="53" data-source-line-end="54" data-token-idx="80">2.9 非个人信息：我们还可能收集其他无法直接或间接地识别到特定个人、且根据当地适用法律不属于个人信息的信息。这类信息被称为非个人信息。我们可能收集、使用、转移和披露非个人信息。以下是一些我们如何收集及如何以汇总的形式使用非个人信息的示例。</p><ul data-source-line="55" data-source-line-end="58" data-token-idx="83"><li data-source-line="55" data-source-line-end="56" data-token-idx="84">我们可能包含您使用特定服务时产生的统计类数据（如匿名设备相关信息、日活事件、页面访问事件、页面访问时长事件、会话事件）。</li><li data-source-line="56" data-source-line-end="58" data-token-idx="89">网络监控数据如请求时长、请求与错误请求数等。</li></ul><p data-source-line="58" data-source-line-end="59" data-token-idx="95">收集此类信息的目的在于改善我们向您提供的服务。我们收集信息的类别和数量将取决于您如何使用我们的产品或服务。</p><p data-source-line="60" data-source-line-end="61" data-token-idx="98">2.10 其他信息：环境特征值（ECV），即从设备标识、连接 Wi-Fi 时产生的信息和地理位置信息。</p><p data-source-line="62" data-source-line-end="63" data-token-idx="101">2.11 来源于第三方的信息：在一些法律允许的情况下，我们可能从第三方处获得您的个人信息。例如：</p><ul data-source-line="64" data-source-line-end="67" data-token-idx="104"><li data-source-line="64" data-source-line-end="65" data-token-idx="105">出于安全和防欺诈的目的，针对特定账号、金融交易等服务，在您授权的前提下，通过合法来源核实您的信息（如电话号码）。</li><li data-source-line="65" data-source-line-end="67" data-token-idx="110">通过指定的唯一标识符（如从广告主处获得的 IMEI/OAID/GAID）以及特定情况下可能接收与您使用广告服务相对应的部分转化效果数据（如点击情况）进行广告模型优化，为您对应提供广告服务。</li></ul><p data-source-line="67" data-source-line-end="68" data-token-idx="116">2.12 我们在向您提供业务功能或具体服务时，我们会按照本隐私政策以及相应的产品服务协议的约定收集、使用、存储、对外提供及保护您的用户信息；超出本隐私政策以及相应的产品服务协议约定收集您的用户信息的，我们会另行向您说明信息收集的范围与目的，并征得您的同意后方收集提供相应服务所必要的您的信息；如您选择不提供上述信息，将会影响到您使用相应产品或功能。</p><h2 data-source-line="69" data-source-line-end="70" data-token-idx="119" id="3.-%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8-cookie-%E5%92%8C%E5%90%8C%E7%B1%BB%E6%8A%80%E6%9C%AF" data-tag="h2">3. 我们如何使用 Cookie 和同类技术</h2><p data-source-line="71" data-source-line-end="72" data-token-idx="122">3.1 我们可能会通过 Cookie 和其他相关技术收集和使用您的信息。我们使用 Cookie 的具体用途包括：</p><p data-source-line="73" data-source-line-end="74" data-token-idx="125">3.1.1 记住您的身份。例如：Cookie 有助于我们辨认您作为我们的注册用户的身份。</p><p data-source-line="75" data-source-line-end="76" data-token-idx="128">3.1.2 分析您使用我们服务的情况，以便为您提供更加周到的个性化服务，包括但不限于定制化页面、推荐等。</p><p data-source-line="77" data-source-line-end="78" data-token-idx="131">3.2 您可以通过浏览器设置拒绝或管理 Cookie。但请注意，如果停用 Cookie，您有可能无法享受最佳的服务体验，某些功能的可用性可能会受到影响。</p><p data-source-line="79" data-source-line-end="80" data-token-idx="134">3.3 通过本平台 Cookie 记录的有关信息，将适用本声明。</p><h2 data-source-line="81" data-source-line-end="82" data-token-idx="137" id="4.-%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E5%85%B1%E4%BA%AB%E3%80%81%E8%BD%AC%E8%AE%A9%E3%80%81%E5%85%AC%E5%BC%80%E6%8A%AB%E9%9C%B2%E6%82%A8%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF" data-tag="h2">4. 我们如何共享、转让、公开披露您的个人信息</h2><h3 data-source-line="83" data-source-line-end="84" data-token-idx="140" id="4.1-%E5%85%B1%E4%BA%AB" data-tag="h3">4.1 共享</h3><p data-source-line="85" data-source-line-end="86" data-token-idx="143">我们不会与中国联通以外的任何公司、组织和个人分享您的个人信息。但以下情况除外：</p><p data-source-line="87" data-source-line-end="88" data-token-idx="146">4.1.1 在获取明确同意的情况下共享：获得您的明确同意后，我们会与其他方共享您的个人信息。</p><p data-source-line="89" data-source-line-end="90" data-token-idx="149">4.1.2 我们可能会根据法律法规及监管政策要求，或按政府主管部门的强制性要求，对外共享您的个人信息。</p><p data-source-line="91" data-source-line-end="92" data-token-idx="152">4.1.3 与我们的关联公司共享：您的个人信息可能会与我们的关联公司共享。我们将依照合法、正当、必要、诚信原则，仅出于在能够实现业务目的最小范围内共享您必要的个人信息，且受本隐私政策中所声明目的的约束。如相关法律法规、监管政策要求或我们为维护您的权益认为确有必要时，我们亦会在将信息提供给关联公司前征得您的单独同意。关联公司如要改变个人信息的处理目的，将再次征求您的授权同意。</p><p data-source-line="93" data-source-line-end="94" data-token-idx="155">4.1.4 与授权合作伙伴共享：仅为实现本隐私政策中声明的目的，我们的某些服务将由授权合作伙伴提供。为此我们可能会与合作伙伴共享您的到达地或某些个人信息。例如，在您通过我们的网站购买商品或订购业务时，我们必须与物流服务提供商共享您的个人信息才能安排送货，或者安排合作伙伴提供服务。我们将依照合法、正当、必要、诚信原则，仅出于在能够实现业务目的最小范围内共享您必要的个人信息。如相关法律法规、监管政策要求或我们为维护您的权益认为确有必要时，我们亦会在将信息提供给授权合作伙伴前征得您的单独同意。我们的合作伙伴无权将共享的个人信息用于任何其他用途。</p><h3 data-source-line="95" data-source-line-end="96" data-token-idx="158" id="4.2-%E8%BD%AC%E7%A7%BB" data-tag="h3">4.2 转移</h3><p data-source-line="97" data-source-line-end="98" data-token-idx="161">我们不会将您的个人信息转移给任何公司、组织和个人，但以下情况除外：</p><p data-source-line="99" data-source-line-end="100" data-token-idx="164">4.2.1 在获取明确同意的情况下转移：获得您的明确同意后，我们会向其他方转移您的个人信息；</p><p data-source-line="101" data-source-line-end="102" data-token-idx="167">4.1.2 在涉及合并、收购或破产清算时，如涉及到个人信息转移，我们会要求新的持有您个人信息的公司、组织继续受此隐私政策的约束，否则我们将要求该公司、组织重新向您征求授权同意；</p><p data-source-line="103" data-source-line-end="104" data-token-idx="170">4.1.3 相关法律法规规定或我们与您约定的其他情形。</p><h3 data-source-line="105" data-source-line-end="106" data-token-idx="173" id="4.3-%E5%85%AC%E5%BC%80%E6%8A%AB%E9%9C%B2" data-tag="h3">4.3 公开披露</h3><p data-source-line="107" data-source-line-end="108" data-token-idx="176">我们仅会在以下情况下，公开披露您的个人信息：</p><p data-source-line="109" data-source-line-end="110" data-token-idx="179">4.3.1 获得您明确同意后；</p><p data-source-line="111" data-source-line-end="112" data-token-idx="182">4.3.2 基于法律的披露：在法律、法律程序、或政府主管部门强制性要求的情况下，我们可能会公开披露您的个人信息。</p><h2 data-source-line="113" data-source-line-end="114" data-token-idx="185" id="5.-%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E4%BF%9D%E5%AD%98%E5%92%8C%E4%BF%9D%E6%8A%A4%E6%82%A8%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF" data-tag="h2">5. 我们如何保存和保护您的个人信息</h2><p data-source-line="115" data-source-line-end="116" data-token-idx="188">5.1 保存地域：我们在中华人民共和国境内收集和产生的个人信息将存储在中华人民共和国境内。我们仅在本隐私政策所述目的所必需期间和法律法规及监管规定的时限内保存您的个人信息，超出保存期限后，我们将对所收集的信息进行匿名化处理。</p><p data-source-line="117" data-source-line-end="118" data-token-idx="191">5.2 保护措施：为了保障您的信息安全，我们在收集您的信息后，将采取各种合理必要的措施保护您的信息。在技术开发环境当中，我们仅使用经过去标识化处理的信息进行统计分析；对外提供相关研究报告时，我们将对报告中所包含的信息进行去标识化处理。我们会将去标识化后的信息与可用于恢复识别个人的信息分开存储，确保在针对去标识化信息的后续处理中不重新识别个人。</p><p data-source-line="119" data-source-line-end="120" data-token-idx="194">5.3 我们已使用符合业界标准的安全防护措施保护您提供的个人信息，防止数据遭到未经授权访问、公开披露、使用、修改、损坏或丢失。我们将采取一切合理可行的措施（例如：身份鉴别、信息收集监测和审计、网络专线传输、防入侵、防病毒、信息加密存储、信息访问的权限管理、信息认证授权和监控审计、信息脱敏、信息溯源）以及配套的管理体系来保护您的个人信息。</p><p data-source-line="121" data-source-line-end="122" data-token-idx="197">5.4 我们承诺将严格按照国家有关规定做好用户信息安全防护工作。为保障您的信息安全，我们会使用必要安全技术及配套的管理体系来防止您的信息被泄露、毁损或者丢失。同时我们已设立用户信息保护责任部门，建立相关内控制度，对可能接触到您信息的工作人员采取最小够用授权原则；对工作人员进行相关法律法规、隐私政策和安全意识培训，对工作人员处理您的信息的行为进行系统监控。我们并将接受国家相关机构的信息安全检查。</p><p data-source-line="123" data-source-line-end="124" data-token-idx="200">5.5 您需要承诺妥善保存登录的账号、密码等信息，由于您的原因造成账号密码的泄露产生的后果由您承担。为防止信息泄露，我们将采取防泄漏、反爬虫等技术手段，限制频繁查询您的信息等异常操作行为，以防止账号密码泄露或他人冒用身份造成您产生不良行为记录或者您的信息泄露。</p><p data-source-line="125" data-source-line-end="126" data-token-idx="203">5.6 我们已制定个人信息安全事件应急预案，定期组织内部相关人员进行应急响应培训和应急演练，使其掌握岗位职责和应急处置策略和规程。但由于技术水平限制及可能存在的各种恶意手段，有可能因我们可控范围外的因素而出现安全问题。在发生个人信息安全事件后，我们将按照相关法律法规及监管政策的要求，及时向您告知：安全事件的基本情况和可能影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议、对您的补救措施等。我们将及时将事件相关情况以邮件、信函、电话、推送通知等方式告知您，难以逐一告知个人信息主体时，我们会采取合理、有效的方式发布公告。同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况。</p><h2 data-source-line="127" data-source-line-end="128" data-token-idx="206" id="6.-%E6%88%91%E4%BB%AC%E5%A6%82%E4%BD%95%E4%BF%9D%E6%8A%A4%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF" data-tag="h2">6. 我们如何保护未成年人的个人信息</h2><p data-source-line="129" data-source-line-end="130" data-token-idx="209">6.1 我们非常重视对未成年人个人信息的保护。我们将根据国家相关法律法规及监管政策的规定保护未成年人的个人信息。</p><p data-source-line="131" data-source-line-end="132" data-token-idx="212">6.2 如您为不满十八周岁的未成年人，在使用我们的服务前，应在您的父母或其他监护人监护、指导下共同阅读本隐私政策，并由您的父母或其他监护人确认是否同意本隐私政策。</p><p data-source-line="133" data-source-line-end="134" data-token-idx="215">6.3 对于经父母或其他监护人同意而收集未成年人个人信息的情况，我们只会在受到法律允许、父母或其他监护人明确同意或者保护未成年人所必要的情况下使用或公开披露此信息。</p><p data-source-line="135" data-source-line-end="136" data-token-idx="218">6.4 如果我们发现自己在未事先获得可证实的父母或其他监护人同意的情况下收集了未成年人的个人信息，会设法尽快删除相关数据。如您是未成年人的父母或其他监护人，请您关注您监护的未成年人是否在取得您的授权同意之后使用我们的服务。如您对您所监护的未成年人的个人信息有疑问，请通过本隐私政策中的联系方式与我们联系。</p><p data-source-line="137" data-source-line-end="138" data-token-idx="221">6.5 我们制定了专门的未成年人个人信息处理规则，您可以通过阅读《中国联通儿童个人信息保护政策及监护人须知》了解更多信息。</p><h2 data-source-line="139" data-source-line-end="140" data-token-idx="224" id="7.-%E6%82%A8%E7%9A%84%E6%9D%83%E5%88%A9" data-tag="h2">7. 您的权利</h2><h3 data-source-line="141" data-source-line-end="142" data-token-idx="227" id="7.1-%E8%AE%BF%E9%97%AE%E6%82%A8%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF" data-tag="h3">7.1 访问您的个人信息</h3><p data-source-line="143" data-source-line-end="144" data-token-idx="230">您有权访问您的个人信息，法律法规规定的例外情形除外。</p><p data-source-line="145" data-source-line-end="146" data-token-idx="233">7.1.1 您可以在本平台的个人信息页面查看您的个人信息。</p><p data-source-line="147" data-source-line-end="148" data-token-idx="236">7.1.2 您可以在本平台的个人信息页面编辑此账号的基本信息、账号密码、绑定手机号、绑定邮箱等信息。</p><h3 data-source-line="149" data-source-line-end="150" data-token-idx="239" id="7.2-%E6%9B%B4%E6%AD%A3%E6%82%A8%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF" data-tag="h3">7.2 更正您的个人信息</h3><p data-source-line="151" data-source-line-end="152" data-token-idx="242">当您的个人信息变更时，如手机号码变更，您可以在本平台个人信息页面修改您的手机号。</p><h3 data-source-line="153" data-source-line-end="154" data-token-idx="245" id="7.3-%E5%88%A0%E9%99%A4%E6%82%A8%E7%9A%84%E4%B8%AA%E4%BA%BA%E4%BF%A1%E6%81%AF" data-tag="h3">7.3 删除您的个人信息</h3><p data-source-line="155" data-source-line-end="156" data-token-idx="248">在以下情形中，您可以向我们提出删除个人信息的请求：</p><p data-source-line="157" data-source-line-end="158" data-token-idx="251">7.3.1 如果我们处理个人信息的行为违反法律法规；</p><p data-source-line="159" data-source-line-end="160" data-token-idx="254">7.3.2 如果我们收集、使用您的个人信息，却未征得您的同意；</p><p data-source-line="161" data-source-line-end="162" data-token-idx="257">7.3.3 如果我们处理个人信息的行为违反了与您的约定；</p><p data-source-line="163" data-source-line-end="164" data-token-idx="260">7.3.4 如果我们不再为您提供产品或服务；</p><p data-source-line="165" data-source-line-end="166" data-token-idx="263">7.3.5 如果您不再使用我们的产品或服务。</p><p data-source-line="167" data-source-line-end="168" data-token-idx="266">请您注意，当您或我们协助您成功删除相关信息后，因为适用的法律和安全技术限制，我们可能无法立即从备份系统中删除相应的信息，之前的信息我们仍会按照监管政策要求的时间进行保存，且在该依法保存的时间内有权机关仍有权依法查询，保存期间我们会安全地存储您的个人信息并限制对其的任何进一步的处理，直到备份可以删除或实现匿名化。</p><h3 data-source-line="169" data-source-line-end="170" data-token-idx="269" id="7.4-%E4%BF%9D%E6%8A%A4%E6%82%A8%E7%9A%84%E8%B4%A6%E5%8F%B7%E5%AE%89%E5%85%A8" data-tag="h3">7.4 保护您的账号安全</h3><p data-source-line="171" data-source-line-end="172" data-token-idx="272">您可以通过以下方式确保您的本平台的账号安全：</p><ul data-source-line="173" data-source-line-end="178" data-token-idx="275"><li data-source-line="173" data-source-line-end="174" data-token-idx="276">为本平台登录账号设置唯一的密码并定期修改密码。</li><li data-source-line="174" data-source-line-end="175" data-token-idx="281">不向任何人（除非此人经您正式授权）披露您的登录账号、密码信息。</li><li data-source-line="175" data-source-line-end="176" data-token-idx="286">无论何时，请不要向任何人（包括自称是我公司客服的人士）透露您收到的验证码。</li><li data-source-line="176" data-source-line-end="178" data-token-idx="291">无论您以本平台用户的身份登录本平台，或是在他人的计算机或公共互联网终端上登录时，您总应当在会话结束后注销登出。</li></ul><p data-source-line="178" data-source-line-end="179" data-token-idx="297">我们不对因您未能保持个人信息的私密性而导致第三方访问您的个人信息进而造成的安全疏漏承担责任。尽管有上述规定，如果发生其他任何互联网用户未经授权使用您账号的情况或其他任何安全漏洞，您应当立即通知我们。您的协助将有助于我们保护您个人信息的私密性。</p><h2 data-source-line="180" data-source-line-end="181" data-token-idx="300" id="8.-%E6%9C%AC%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96%E5%A6%82%E4%BD%95%E6%9B%B4%E6%96%B0" data-tag="h2">8. 本隐私政策如何更新</h2><p data-source-line="182" data-source-line-end="183" data-token-idx="303">我们会根据业务和技术的变更，根据适用法律，依循良好做法，定期审核隐私政策，并可能更新本隐私政策。如果我们对本隐私政策进行重大变更，我们将在您重新登录本平台时向您推送这些信息。此类隐私政策变化将从通知或网站规定的生效日期开始适用。我们建议您定期查阅本页面以获取我们隐私权实践的最新信息。您继续使用产品和网站、手机和/或其他任何设备上的服务，将被视为接受更新的隐私政策。在我们向您收集更多的个人信息或我们因为新的目的使用或披露您的个人信息时，我们会根据适用法律要求，再次征得您的同意。</p><h2 data-source-line="184" data-source-line-end="185" data-token-idx="306" id="9.-%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC" data-tag="h2">9. 联系我们</h2><p data-source-line="186" data-source-line-end="187" data-token-idx="309">如您对本隐私政策或您个人信息的相关事宜有任何问题、投诉、意见或建议，您可以通过以下方式联系我们。一般情况下，我们将在 15 个工作日内回复。</p><p data-source-line="188" data-source-line-end="189" data-token-idx="312"><strong>公司名称</strong>：中国联合网络通信有限公司</p><p data-source-line="190" data-source-line-end="191" data-token-idx="315"><strong>注册地址</strong>：北京市西城区金融大街 21 号联通大厦</p><p data-source-line="192" data-source-line-end="193" data-token-idx="318"><strong>联系电话</strong>：10010 客服热线</p><p data-source-line="194" data-source-line-end="195" data-token-idx="321"><strong>网     址</strong>：<a href="http://www.chinaunicom.com" target="_blank">http://www.chinaunicom.com</a></p></article>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.15.3/katex.min.css" rel="stylesheet" />
+  </body>
+</html>
