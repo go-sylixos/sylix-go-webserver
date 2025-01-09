@@ -8,7 +8,7 @@
 - **embedfs**：利用 Go 1.16 的 `embed` 包嵌入静态文件，简化文件管理。
 - **SylixOS 支持**：替换了 `go.mod` 中有关 SylixOS 的包，以确保兼容性。
 
-## 运行示例
+## 编译示例
 
 该项目是一个演示性质的项目，旨在展示如何结合使用 GIN 框架和 `embed` 包来构建 Web 服务器。你可以根据需要进行修改和扩展。
 
@@ -19,7 +19,7 @@ git clone https://github.com/yourusername/sylix-go-webserver.git
 # 进入项目目录
 cd sylix-go-webserver
 
-# 运行项目
+# 编译项目
 ./build.sh
 ```
 
